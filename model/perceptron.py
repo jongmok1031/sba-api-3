@@ -1,5 +1,5 @@
 import numpy as np
-
+'''퍼셉트론 이중분류 이거 겁나 옛날꺼야. 이진분류만가능'''
 
 class Perceptron(object):
     """퍼셉트론 분류기   //중요 : 에포크=학습횟수(반복횟수), mcp 뉴런
