@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 import pandas as pd
 import os
+import googlemaps
 
 
 @dataclass
@@ -21,3 +22,6 @@ class FileReader:
 
     def xls_to_dframe(self, header, usecols):
         return pd.read_excel(self.new_file(),  header=  header, usecols = usecols)
+
+    def create_gmaps(self):
+        return googlemaps.Client(key='AIzaSyBGTLvcXmAfXzJYqNOnU_1-3A2EFjxiqP4')
