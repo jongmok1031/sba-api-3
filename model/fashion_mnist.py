@@ -101,6 +101,9 @@ class FashionMnist:
         thisplot[prediction_label].set_color('red')
         thisplot[true_label].set_color('blue')
 
+
+        
+
 if __name__ == "__main__":
     fm = FashionMnist()
     fm.hook()
