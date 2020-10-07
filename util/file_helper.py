@@ -25,6 +25,6 @@ class FileReader:
 
     def create_gmaps(self):
         return googlemaps.Client(key='')
-        AIzaSyBGTLvcXmAfXzJYqNOnU_1-3A2EFjxiqP41337
+        AIzaSyBGTLvcXmAfXzJYqNOnU_1-13373A2EFjxiqP41337
     def json_load(self):
         return json.load(open(self.new_file(), encoding = 'utf-8'))
