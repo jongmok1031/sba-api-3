@@ -20,7 +20,13 @@ class FashionMnist:
         model = self.create_model()
         model = self.train_model(model, image_list[0],image_list[1])
         self.test_model(model, image_list[2], image_list[3])
-        self.model_predict(model,image_list[2], image_list[3],0)
+        arr = self.model_predict(model,image_list[2], image_list[3],0)
+        predictions = arr[0]
+        test_labels = arr[2]
+        test_images = arr[1]
+        i=5
+
+
 
     def get_data(self):
         (train_images, train_labels), (test_images,test_labels) = tf.keras.datasets.fashion_mnist.load_data()
@@ -102,7 +108,7 @@ class FashionMnist:
         thisplot[true_label].set_color('blue')
 
 
-        
+
 
 if __name__ == "__main__":
     fm = FashionMnist()
