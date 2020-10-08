@@ -1,0 +1,39 @@
+nn
+adalin algo = bool fcn + activation fcn + step fcn
+cost fcn
+
+ann = dnn    dnn+col = cnn
+
+tf 는 라이브러리
+flask 는 프레임워크
+keras는 api
+
+tf 는 알고리즘 구현,실행,인터페이스 갖고잇음
+
+저수준' 자우ㅠ도 높음
+고수준 자유도 낮음... customizing 할 요소 적음
+
+노드 : 입출력 가지는 연산 = 함수 (그래프 = matrix)
+세션 넣고 실행
+즉시 실행모드 (세션 숨겨져잇음)
+
+텐서는 스칼라, 벡터, 메트릭스등이 일반화한것
+스칼라 : 랭크 0 인 텐서
+벡터  랭크 1인 텐서
+매트릭스 : 2
+큐빅 : 3
+ ... 4,5
+
+ 텐서는 자료구조
+
+ 선형대수학에서 다중선형사상 또는 텐서는 선형 관계를 나타내는 다중선형대수학의 대상.
+ 텐서는 기저를 선택하여 다차원 배열로 나타낼수잇음 
+ 기저를 바꾸는 변환법칙존재
+
+
+ variable
+ variable,const,placeholder
+ placeholder: 저수준 개발, 입력데이터, 하이퍼파라미터 튜닝 하는곳
+
+ dnn = bool fcn + activation fcn + step fcn+ loss fcn
+
