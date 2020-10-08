@@ -39,7 +39,7 @@ class Imdb:
     샘플생성
     데이터셋이 많으므로 GD 보다는 mini-batch 방식을 사용합니다.
     '''
-    def create_sample(self) -> object:
+    def create_sample(self):
         train_examples_batch, traiin_labels_batch = next(iter(self.train_data.batch(10)))
         return train_examples_batch
 
